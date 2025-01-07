@@ -10,7 +10,8 @@ import { Handler } from "aws-lambda";
 
 export const handler: Handler = async (event) => {
 
-    console.log("made it here", event)
+    console.log("made it here")
+    console.log(event)
 
-    return "123"
+    return "1234"
 }
