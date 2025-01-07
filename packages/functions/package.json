@@ -1,11 +1,11 @@
 {
   "name": "@notes/functions",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.723.0",
     "@aws-sdk/lib-dynamodb": "^3.723.0",
-    "@notes/core": "*",
     "intuit-oauth": "^4.1.3",
     "sst": "*",
     "uuid": "^11.0.4"
