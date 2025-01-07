@@ -12,7 +12,7 @@ export const handler: Handler = async (event) => {
 
     console.log("made it here")
 
-    return "7890"
+    return "0123"
 
     //return "mno"
 }
