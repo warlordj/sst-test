@@ -12,5 +12,5 @@ export const handler: Handler = async (event) => {
 
     console.log("made it here")
 
-    return event.body
+    return "mno"
 }
