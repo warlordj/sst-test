@@ -12,5 +12,7 @@ export const handler: Handler = async (event) => {
 
     console.log("made it here")
 
-    return "mno"
+    return event.rawPath
+
+    //return "mno"
 }
