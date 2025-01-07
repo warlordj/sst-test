@@ -10,5 +10,5 @@ import { Handler } from "aws-lambda";
 
 export const handler: Handler = async (event) => {
 
-    return event.body
+    return "123"
 }
