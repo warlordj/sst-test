@@ -3,7 +3,9 @@ import { Resource } from "sst";
 import { APIGatewayProxyEvent } from "aws-lambda";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { PutCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
+
 const dynamoDb = DynamoDBDocumentClient.from(new DynamoDBClient({}));
+
 export async function main(event: APIGatewayProxyEvent) {
   let data, params;
   // Request body is passed in as a JSON encoded string in 'event.body'
@@ -26,6 +28,7 @@ export async function main(event: APIGatewayProxyEvent) {
       body: JSON.stringify({ error: true }),
     };
   }
+  
   try {
     await dynamoDb.send(new PutCommand(params));
     return {
