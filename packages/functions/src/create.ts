@@ -12,7 +12,7 @@ export const handler: Handler = async (event) => {
 
     console.log("made it here")
 
-    return event.rawPath
+    return "789"
 
     //return "mno"
 }
