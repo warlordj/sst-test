@@ -16,8 +16,14 @@ const authUri = oauthClient.authorizeUri({
 
 export const handler: Handler = async (event) => {
 
-    console.log("test123")
+    console.log("1")
 
-    return "0123456789"
+    return {
+        statusCode: 200, // HTTP 200 OK
+        headers: {
+            'Content-Type': 'application/json', // Specify JSON response
+        },
+        body: JSON.stringify(authUri), // Return "test" as a JSON string
+    };
 
 }
