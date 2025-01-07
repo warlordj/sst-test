@@ -1,10 +1,4 @@
 // Create the API
-export const api = new sst.aws.ApiGatewayV2("Api", {
-  defaults: {
-    function: {
-      runtime: "nodejs22.x",
-    },
-  },
-});
+export const api = new sst.aws.ApiGatewayV2("Api", {});
 
 api.route("GET /notes", "packages/functions/src/create.handler");
