@@ -6,7 +6,7 @@ import { PutCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
 const dynamoDb = DynamoDBDocumentClient.from(new DynamoDBClient({}));
 
-export async function main(event: APIGatewayProxyEvent) {
+export const handler = async (event: APIGatewayProxyEvent) => {
 
     console.log("HELLO?");
 
