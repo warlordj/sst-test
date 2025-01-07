@@ -16,6 +16,8 @@ const authUri = oauthClient.authorizeUri({
 
 export const handler: Handler = async (event) => {
 
+    console.log("test123")
+
     return "0123456789"
 
 }
