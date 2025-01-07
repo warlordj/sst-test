@@ -9,6 +9,11 @@ const oauthClient = new OAuthClient({
     redirectUri: 'https://d1k7d2979d9v40.cloudfront.net/auth',
 });
 
+const authUri = oauthClient.authorizeUri({
+    scope: [OAuthClient.scopes.Accounting],
+    state: 'testState', // Optional state parameter for CSRF protection
+});
+
 export const handler: Handler = async (event) => {
 
     return "0123456789"
